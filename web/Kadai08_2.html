@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>基本情報の入力</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>アンケート入力</h1>
+
+        <h2>試食していただいた反射製品についてアンケートのご協力ください</h2>
+
+        <form action="Kadai08_2.jsp" method="post">
+            <table>
+                <tr><td>名前</td><td><input type ="text" name ="name" value="name"></td></tr>
+
+                <tr><td>
+                        <h3>製品名</h3> 
+                    <select class="product" name="product">
+                    <option value="本鮪">本鮪</option>
+                    <option value="特上シャモ">特上シャモ</option>
+                    <option value="熟成本カツオ">熟成本カツオ</option>
+                </select>
+                
+                    </td></tr>
+
+
+                <tr><td>評価</td><td>
+                        <input type="radio" name="add" value="良い"> 良い
+                        <input type="radio" name="add" value="普通"> 普通
+                        <input type="radio" name="add" value="悪い"> 悪い
+                    </td></tr>
+
+                <tr><td>自由意見</td><td>
+                        <textarea name="txt" rows="8" cols="80"></textarea>
+
+                    </td></tr>
+
+
+                <tr><td>送信</td><td><input type ="submit" name="submit" value="submit"></td></tr>
+
+            </table>
+
+    </body>
+</html>
